@@ -33,24 +33,24 @@ else {
 // combine the next 4 conditionals into 
 // one if/else/elseif block that checks in order for:
 // identical, equal, not identical, not equal
-if ($b == $c) {
+if ($b === $c) {
+    // output the appropriate result
+    echo "$b is identical $c\n";
+}
+
+elseif ($b == $c) {
     // output the appropriate result
     echo "$b is equal to $c\n";
 }
 
-elseif ($b === $c) {
+elseif ($b !== $c) {
     // output the appropriate result
-    echo "$b is identical to $c\n";
-}
-
-elseif ($b != $c) {
-    // output the appropriate result
-    echo "$b is not equal to $c\n";
+    echo "$b is not identical to $c\n";
 }
 
 else {
     // output the appropriate result
-    echo "$b is not identical to $c\n";
+    echo "$b is not equal to $c\n";
 }
 
 ?>
