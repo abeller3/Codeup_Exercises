@@ -31,7 +31,6 @@ if ($b >= $c)
 {
     echo "$b is greater than or equal to $c\n";
 }
-
 else 
     // output the appropriate result
 {
