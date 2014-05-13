@@ -19,6 +19,7 @@ if (!(is_numeric($user_starting)) || !(is_numeric($user_ending))) {
 
 if (!(is_numeric($user_increm))) {
 	$user_increm= 1;
+	die(2);
 }
 
 for ($n = $user_starting; $n <= $user_ending; $n += $user_increm) {
