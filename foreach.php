@@ -39,7 +39,7 @@ foreach($things as $thing) {
 	} elseif (is_float($thing)) {
 		echo "{$thing}\n";
 	} elseif (is_array($thing)) {
-		echo "{$thing}\n";
+		echo "array\n";
 	} elseif (is_bool($thing)) {
 		echo "{$thing}\n";
 	} elseif (is_null($thing)) {
@@ -49,9 +49,6 @@ foreach($things as $thing) {
 		}
 	}
 	
-// foreach ($things as $thing) {
-//     $type = $thing;
-//     echo ("$thing is a {$type}\n");
-// 	}
+
 	
 ?>
