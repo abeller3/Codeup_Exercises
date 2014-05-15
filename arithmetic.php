@@ -1,12 +1,18 @@
 <?php
 
-function error($a,$b)
-	if (!(is_numeric($a)) || (!(is_numeric($b))) {
-		
-	}
-function add($a, $b) {
-	if (!(is_numeric($a)) || (!(is_numeric($b))) ) {
+
+
+function error($a,$b) {
 	echo "ERROR: either $a  or $b is not a number. Enter in numeric values only";
+	}
+
+
+
+
+		
+	function add($a, $b) {
+	if (!(is_numeric($a)) || (!(is_numeric($b))) ) {
+	error($a,$b);
 	} else 
     echo $a + $b; 
     echo PHP_EOL;
@@ -14,7 +20,7 @@ function add($a, $b) {
 
 function subtract($a, $b) {
 	if (!(is_numeric($a)) || (!(is_numeric($b))) ) {
-	echo "ERROR: either $a  or $b is not a number. Enter in numeric values only";
+	error($a,$b);
 	} else 
     echo $a - $b;
     echo PHP_EOL;
@@ -22,7 +28,7 @@ function subtract($a, $b) {
 
 function multiply($a, $b) {
 	if (!(is_numeric($a)) || (!(is_numeric($b))) ) {
-	echo "ERROR: either $a  or $b is not a number. Enter in numeric values only";
+	error($a,$b);
 	} else 
     echo $a * $b; 
     echo PHP_EOL;
@@ -30,17 +36,18 @@ function multiply($a, $b) {
 
 function divide($a, $b) {
 	if (!(is_numeric($a)) || (!(is_numeric($b))) ) {
-	echo "ERROR: either $a or $b is not a number. Enter in numeric values only";
+	error($a,$b);
 	} elseif ($a == 0 || $b == 0) {
-	echo "Can't divide by zero"; 
-	} else 
+	echo "Cant divide by zero";
+	} else 	
    echo $a / $b; 
    echo PHP_EOL;
 }
 
+
 function modulus($a, $b) {
 	if (!(is_numeric($a)) || (!(is_numeric($b))) ) {
-	echo "ERROR: Either $a or $ b is not a number. Enter in numeric values only, brah";
+	error($a,$b);
 	} else 
 	echo $a % $b; 
 	echo PHP_EOL;
