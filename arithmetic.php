@@ -1,16 +1,13 @@
 <?php
 
-
-
 function error($a,$b) {
 	echo "ERROR: either $a  or $b is not a number. Enter in numeric values only";
 	}
+function zero() {
+	echo "Can't divide by zero!!!";
+}
 
-
-
-
-		
-	function add($a, $b) {
+function add($a, $b) {
 	if (!(is_numeric($a)) || (!(is_numeric($b))) ) {
 	error($a,$b);
 	} else 
@@ -38,7 +35,7 @@ function divide($a, $b) {
 	if (!(is_numeric($a)) || (!(is_numeric($b))) ) {
 	error($a,$b);
 	} elseif ($a == 0 || $b == 0) {
-	echo "Cant divide by zero";
+	zero();
 	} else 	
    echo $a / $b; 
    echo PHP_EOL;
