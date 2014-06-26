@@ -1,4 +1,5 @@
 <?php
+
 $books = array(
     'The Hobbit' => array(
         'published' => 1937,
@@ -21,14 +22,23 @@ $books = array(
         'pages' => 544
     )
 );
-	// print_r($books);
+	
+// print_r($books);
+echo "Books From 1951 to Recent\n";
+echo "----------------------------\n";
 
-	foreach($books as $titles => $details) {
-		// foreach($details as $attribute => $value){
-			if ($details['published'] > 1950){
-				echo "$titles\n";
-			}
-		}
-	foreach ($books as $titles => $book) {
-		echo "$titles was published in " . $book['published'] . " and was written by " . $book['author'] . ".\n\n";
+foreach($books as $titles => $details) 
+{
+	if ($details['published'] > 1950)
+    {
+		echo "$titles\n";
 	}
+}
+
+echo "Books Details\n";
+echo "---------------------------\n";
+
+foreach ($books as $titles => $details) 
+{
+	echo "$titles was published in " . $details['published'] . " and was written by " . $details['author'] . ".\n\n";
+}
