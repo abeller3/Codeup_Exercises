@@ -37,9 +37,6 @@ else
     echo "$b is not greater than or equal to $c\n";
 }
 
-// combine the next 4 conditionals into 
-// one if/else/elseif block that checks in order for:
-// identical, equal, not identical, not equal
 if ($b == $c) 
 {
     // output the appropriate result
