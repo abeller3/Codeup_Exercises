@@ -5,7 +5,7 @@ $numbers = array(1,2,3,4,5);
 // Loop 1
 foreach ($numbers as $key => $value) 
 {
-	echo "{$value}\n";
+    echo "{$value}\n";
 }
 
 // Loop 2
@@ -36,21 +36,21 @@ echo "DONE!\n";
 //Loop 4
 for ($i=1; $i <= 100; $i++) 
 { 
-	if ($i % 2 == 0) 
+    if ($i % 2 == 0) 
     {
-		echo $i . "\n";
-		continue;
-	}
+        echo $i . "\n";
+        continue;
+    }
 }
 
 //Loop 5
 for ($i=1; $i <= 100 ; $i++)
 {
-	echo "{$i}\n";
-  	if ($i >= 10) 
+    echo "{$i}\n";
+    if ($i >= 10) 
     {
-		break;
-	}
+        break;
+    }
 }
 
 
